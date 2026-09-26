@@ -1,0 +1,127 @@
+// SPDX-License-Identifier: (GPL-2.0+ OR MIT)
+/*
+ * Copyright (c) 2026 EmbedFire <embedfire@embedfire.com>
+ *
+ * LubanCat-3 headless/robot overlay: no local display output and no on-board
+ * audio. Used by the Linux + Cortex-M0 AMP variant.
+ *
+ * Deliberately NOT touched here:
+ *   - usbdp_phy_u3 (USB3) / usbdp_phy (Type-C role switch)
+ *   - MIPI CSI / ISP / RGA / MPP / NPU
+ *   - the M0 UART5 pinmux and the AMP reserved-memory (see rk3576-amp.dtsi)
+ */
+
+/* ---- display outputs ---- */
+&display_subsystem {
+	status = "disabled";
+};
+
+&vop {
+	status = "disabled";
+};
+
+&vop_mmu {
+	status = "disabled";
+};
+
+&vdpp {
+	status = "disabled";
+};
+
+&vp0 {
+	status = "disabled";
+};
+
+&vp1 {
+	status = "disabled";
+};
+
+&vp2 {
+	status = "disabled";
+};
+
+&hdmi {
+	status = "disabled";
+};
+
+&hdptxphy_hdmi {
+	status = "disabled";
+};
+
+&route_hdmi {
+	status = "disabled";
+};
+
+&hdmi_in_vp0 {
+	status = "disabled";
+};
+
+&hdmi_in_vp1 {
+	status = "disabled";
+};
+
+&hdmi_in_vp2 {
+	status = "disabled";
+};
+
+&hdmi_in_vopl {
+	status = "disabled";
+};
+
+&dp {
+	status = "disabled";
+};
+
+&dp0 {
+	status = "disabled";
+};
+
+&route_dp0 {
+	status = "disabled";
+};
+
+&dp0_in_vp0 {
+	status = "disabled";
+};
+
+&dp0_in_vp1 {
+	status = "disabled";
+};
+
+&dp0_in_vp2 {
+	status = "disabled";
+};
+
+/* DP part of the USB3/DP combo PHY; the USB3 (u3) part stays enabled. */
+&usbdp_phy_dp {
+	status = "disabled";
+};
+
+/* ---- audio ---- */
+&es8388_sound {
+	status = "disabled";
+};
+
+&hdmi_sound {
+	status = "disabled";
+};
+
+&dp0_sound {
+	status = "disabled";
+};
+
+&sai1 {
+	status = "disabled";
+};
+
+&sai6 {
+	status = "disabled";
+};
+
+&spdif_tx3 {
+	status = "disabled";
+};
+
+&es8388 {
+	status = "disabled";
+};

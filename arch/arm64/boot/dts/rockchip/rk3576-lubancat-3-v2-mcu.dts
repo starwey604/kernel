@@ -13,6 +13,7 @@
 
 #include "rk3576-lubancat-3-v2.dts"
 #include "rk3576-amp.dtsi"
+#include "rk3576-lubancat-3-headless.dtsi"
 
 / {
 	model = "EmbedFire LubanCat-3-v2 (AMP / Cortex-M0 RT-Thread)";
