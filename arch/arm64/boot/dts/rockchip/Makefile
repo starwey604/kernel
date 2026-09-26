@@ -30,6 +30,7 @@ dtb-$(CONFIG_CPU_RK3576) += rk3576-lubancat-generic-mcu.dtb
 dtb-$(CONFIG_CPU_RK3576) += rk3576-lubancat-3.dtb
 dtb-$(CONFIG_CPU_RK3576) += rk3576-lubancat-3-mcu.dtb
 dtb-$(CONFIG_CPU_RK3576) += rk3576-lubancat-3-v2.dtb
+dtb-$(CONFIG_CPU_RK3576) += rk3576-lubancat-3-v2-mcu.dtb
 dtb-$(CONFIG_CPU_RK3576) += rk3576-lubancat-3io.dtb
 dtb-$(CONFIG_CPU_RK3576) += rk3576-lubancat-3-ddr-emmc-test.dtb
 dtb-$(CONFIG_CPU_RK3576) += rk3576-lubancat-3io-test.dtb
